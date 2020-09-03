@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Domain</title>
+
+        <!--Bootstrap  files-->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <script>
+            function showDomain() {
+                var selectDomain = document.getElementById('domain');
+                var option = selectDomain.options[selectDomain.selectedIndex].value;
+                window.open(option);
+            }
+        </script>
+    </head>
+
+    
+    <body>
+        <div class="mt-5 d-flex justify-content-center">
+            <select id="domain">
+                <option value="">Select your domain</option>
+                <option value="http://demo0757661.mockable.io/getProducts">demo0757661</option>
+                <option value="http://demo1196374.mockable.io/productListing%3Flist=true">demo1196374</option>
+            </select>
+            
+            <!-- <input class="SubmitButton" type="button" value="Submit" onclick="showDomain()"  style="font-size:20px; " /> -->
+            
+            <button type="button" onclick="showDomain()" class="btn btn-primary btn-sm ml-1 ">Submit</button>
+        </div>
+    </body>
+</html>
